@@ -1,0 +1,75 @@
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column; }
+
+.yellow-bg {
+  background-color: #ffe497; }
+
+.light-yellow-bg {
+  background-color: #fff3ce; }
+
+.blue-bg {
+  background-color: #cbfff1; }
+
+.coral-bg {
+  background-color: #ff9a89; }
+
+.pink-bg {
+  background-color: #ff5e7c; }
+
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  opacity: 1 !important;
+  background: #fff !important;
+  margin: 5px auto !important; }
+
+.swiper-pagination-bullet-active {
+  background: transparent !important; }
+
+.swiper-pagination-bullet-active.slide-1 {
+  border: 2px solid #ff5e7c; }
+
+.swiper-pagination-bullet-active.slide-2 {
+  border: 2px solid #007aff; }
+
+.swiper-pagination-bullet-active.slide-3 {
+  border: 2px solid #f94527; }
+
+.swiper-pagination-bullet-active.slide-4 {
+  border: 2px solid #ff9a89; }
+
+.swiper-pagination-bullet-active.slide-5 {
+  border: 2px solid #fff3ce; }
+
+html,
+body {
+  position: relative;
+  height: 100%; }
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0; }

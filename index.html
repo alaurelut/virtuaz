@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">		
-		<title>Gorillaz</title>
-		<meta name="description"/>
-		<meta name="keywords" content="Gorillaz" />
-		<meta name="author" content="Virtuaz" />		
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-		<div id="top-bar">
-				<div id="navigation-wrapper">
-					<ul id="menu-menu-principal" class="menu">
-						<li><a href="index.html">Accueil</a></li>
-						<li><a href="page-news.html">News</a></li>
-					</ul>
-				</div>
-		</div>
-	</body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="bower_components/Swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="dist/app.css">
+</head>
+
+<body>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide yellow-bg" data-hash="home">
+								<h1>Gorillaz 1</h1>
+            </div>
+            <div class="swiper-slide blue-bg slide2" data-hash="slide-1">
+                <h1>Gorillaz 2</h1>
+            </div>
+            <div class="swiper-slide coral-bg slide3" data-hash="slide-2">
+              	<h1>Gorillaz 3</h1>
+            </div>
+            <div class="swiper-slide light-yellow-bg slide4" data-hash="slide-3">
+                <h1>Gorillaz 4</h1>
+            </div>
+            <div class="swiper-slide pink-bg slide5" data-hash="slide-4">
+                <h1>Gorillaz 5</h1>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- 	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="bower_components/Swiper/dist/js/swiper.min.js"></script>
+    <script src="dist/app.js"></script>
+
+</body>
+
 </html>

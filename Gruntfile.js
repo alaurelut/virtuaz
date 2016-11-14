@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             sass: {
-                files: ['sass/*.scss', 'js/*.js'],
+                files: ['scss/*.scss', 'js/*.js'],
                 tasks: ['sass', 'concat']
             }
         },
@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'dist/app.css': 'sass/app.scss'
+                    'dist/app.css': 'scss/app.scss'
                 }
             }
         },
@@ -38,5 +38,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
 
-    grunt.registerTask('default', ['sass', 'concat', 'watch']);
+    grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
 };
