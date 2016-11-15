@@ -1,0 +1,9 @@
+.header {
+	top: 0;
+	position: absolute;
+}
+
+.header ul {
+	display: inline-block;
+}
+

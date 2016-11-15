@@ -1,0 +1,36 @@
+.header {
+	top: 0;
+	position: absolute;
+	background-color: #272c3f;
+	width: 100%;
+	z-index: 9999;
+	display: inline-flex;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header img {
+	padding-left: 15px;
+	height: 150px;	
+}
+
+.main-menu {
+	display: flex;
+}
+
+.main-menu a {
+	text-decoration: none;
+	color:#ffffff; 
+	font-family: Roboto;
+	font-size: 16px;
+	letter-spacing: 0.8px;
+	display: block;
+	padding-right: 60px;
+}
+
+.main-menu a:hover {  
+	text-decoration: underline; 
+}
+
+

@@ -1,0 +1,35 @@
+.swiper-wrapper {
+	margin-top: 60px;
+}
+
+.main-content {
+	background-color: #272c3f;
+	height: 100%;
+	width: 50%;
+	margin-top: 0;
+	position: absolute;
+	right: 0px;
+}
+
+.main-content p {
+	color: #ffffff;
+	padding-top: 80px;
+	padding-left: 90px;
+	padding-right: 90px;
+	text-align: justify;
+	font-family: Roboto;
+	font-style: Light;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+}
+
+.main-content img {
+	margin-bottom: 0;
+}
+
+.main-content h1 {
+	letter-spacing: 1.6px;
+	padding-top: 40px;
+	text-align: left;
+	color: #ffffff;
+}
