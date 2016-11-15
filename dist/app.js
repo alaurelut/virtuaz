@@ -8,10 +8,6 @@ var moonkeySwiper = new Swiper ('.swiper-container', {
 
     // If we need pagination
     pagination: '.swiper-pagination',
-    paginationBulletRender: function ( index) {
-       return '<span class="swiper-pagination-bullet slide-' + (index + 1) + '"></span>';
-   },
-
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',

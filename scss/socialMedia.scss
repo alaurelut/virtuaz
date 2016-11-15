@@ -1,3 +1,17 @@
+.social-media{
+  width: 90%;
+  display: flex;
+}
+.instafeed {
+  height: 90vh !important;
+  width: 70% !important;
+}
+
+.twitter-timeline {
+  height: 80vh !important;
+  width: 30% !important;
+}
+
 .instagram-media {
     background: #FFF;
     border: 0;
@@ -8,7 +22,7 @@
     padding: 0;
     width: 99.375%;
     width: -webkit-calc(100% - 2px);
-    width: 26% !important;
-    max-height: 45vh;
+    width: 30% !important;
+    max-height: 40vh;
     display: inline-flex !important;
 }
