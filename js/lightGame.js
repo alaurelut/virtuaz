@@ -1,15 +1,10 @@
 function highlightElement(elem){
-  console.log('highlightElement');
-  console.log(elem);
-  // elem.style.opacity = 1;
-  displayCharacterInfo(elem.srcElement.getAttribute('id'));
+  var characterName = elem.srcElement.getAttribute('id');
+  if (displayedCharacter != characterName) {
+    displayCharacterInfo(characterName);
+  }
 }
-
-var displayedCharacter = 'noodle';
-
 function displayCharacterInfo(characterName){
-  console.log('displayCharacterInfo');
-  console.log(characterName);
   var newDisplayedCharacter = document.getElementById('infos-' + characterName);
   newDisplayedCharacter.style.display = "block";
   if (displayedCharacter !== null ) {
@@ -17,6 +12,8 @@ function displayCharacterInfo(characterName){
   }
   displayedCharacter = characterName;
 }
+
+var displayedCharacter = 'noodle';
 
 var twoD = document.getElementById('twoD');
 twoD.addEventListener("click", highlightElement);
