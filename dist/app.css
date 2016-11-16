@@ -162,6 +162,17 @@
 .swiper-pagination-bullet-active {
   background: #fff !important; }
 
+.swiper-pagination {
+  right: 0 !important;
+  position: absolute;
+  background-color: #1c1c1c;
+  width: 60px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 60px); }
+
 .social-media {
   width: 90%;
   display: flex; }
@@ -307,7 +318,8 @@
     pointer-events: none; }
   .slide2 .left .personnage {
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    cursor: pointer; }
   .slide2 .left #twoD {
     left: 0%;
     opacity: 0.3; }
