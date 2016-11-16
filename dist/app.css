@@ -284,7 +284,8 @@
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.8; }
+    opacity: 0.8;
+    pointer-events: none; }
   .left .light {
     width: 100%;
     height: 170%;
@@ -295,14 +296,15 @@
     z-index: 99999;
     position: absolute;
     top: 0;
-    transform: rotate(140deg); }
+    transform: rotate(140deg);
+    pointer-events: none; }
   .left .personnage {
     position: absolute;
     bottom: 0; }
   .left #twoD {
     left: 0%;
     opacity: 0.3; }
-  .left #murdoc {
+  .left #murdok {
     left: 12%;
     opacity: 0.5; }
   .left #noodle {
@@ -312,8 +314,28 @@
     left: 26%; }
 
 .right {
-  width: 40%;
-  background-color: white; }
+  width: calc( 40% - 200px);
+  background-color: #313131;
+  color: #fff;
+  padding: 100px; }
+  .right #infos-noodle .graf {
+    background: url("../img/personnages/infos/noodle-graf.png") no-repeat;
+    height: 100px; }
+  .right #infos-twoD {
+    display: none; }
+    .right #infos-twoD .graf {
+      background: url("../img/personnages/infos/2d-graf.png") no-repeat;
+      height: 100px; }
+  .right #infos-murdok {
+    display: none; }
+    .right #infos-murdok .graf {
+      background: url("../img/personnages/infos/murdok-graf.png") no-repeat;
+      height: 100px; }
+  .right #infos-russel {
+    display: none; }
+    .right #infos-russel .graf {
+      background: url("../img/personnages/infos/russel-graf.png") no-repeat;
+      height: 100px; }
 
 html,
 body {
