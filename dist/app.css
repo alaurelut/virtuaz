@@ -162,6 +162,17 @@
 .swiper-pagination-bullet-active {
   background: #fff !important; }
 
+.swiper-pagination {
+  right: 0 !important;
+  position: absolute;
+  background-color: #1c1c1c;
+  width: 60px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 60px); }
+
 .social-media {
   width: 90%;
   display: flex; }
@@ -269,8 +280,7 @@
   margin-top: 35px;
   background-image: url("graffite.png");
   background-repeat: no-repeat;
-  background-position: center;
-  text-align: center; }
+  background-position: center; }
 
 .container {
   display: flex;
