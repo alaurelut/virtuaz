@@ -1,12 +1,12 @@
 .swiper-pagination-bullet {
-    width: 16px !important;
-    height: 16px !important;
+    width: 14px !important;
+    height: 14px !important;
     opacity: 1 !important;
-    background: #fff !important;
-    margin: 5px auto !important;
+    background: transparent !important;
+    border: 2px solid #fff;
+    margin: 7px auto !important;
 }
 
 .swiper-pagination-bullet-active {
-	background: transparent !important;
-  border: 2px solid $blue;
+	background: #fff !important;
 }
