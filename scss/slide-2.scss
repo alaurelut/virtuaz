@@ -1,0 +1,54 @@
+.container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+.left {
+	width: 60%;
+	background: url('../img/background-sombre.jpg') no-repeat;
+	-webkit-background-size: cover;
+	overflow: hidden;
+	background-size: cover;
+	position: relative;
+	#shadow {
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0.8;
+	}
+	.light {
+		width: 100%;
+		height: 170%;
+		background-color: white;
+		background-image:radial-gradient(circle at bottom left, white, rgba(255, 255, 0, 0.84));
+		box-shadow: inset 0px 0px 80px 40px #000;
+		opacity: 0;
+		z-index: 99999;
+		position: absolute;
+		top: 0;
+		transform: rotate(140deg);
+	}
+	.personnage{
+		position: absolute;
+		bottom: 0;
+	}
+	#twoD {
+		left: 0%;
+		opacity: 0.3;
+	}
+	#murdoc {
+		left: 12%;
+		opacity: 0.5;
+	}
+	#noodle {
+		left: 50%;
+	}
+	#russel {
+		opacity: 0.8;
+		left: 26%;
+	}
+}
+.right {
+	width: 40%;
+	background-color: white;
+}
