@@ -1,0 +1,50 @@
+
+
+@-webkit-keyframes plane-flying-1 {
+  0%   { left: 60%; }
+  50%   { left: 30%; top: 20% }
+  100% { left: -10%; }
+}
+@-webkit-keyframes plane-flying-2 {
+  0%   { left: 60%; }
+  50%   { left: 30%; top: 75% }
+  100% { left: -10%; }
+}
+@-webkit-keyframes plane-flying-3 {
+  0%   { left: -10%; }
+  50%   { left: 30%; top: 40% }
+  100% { left: 60%; }
+}
+
+#plane-1 {
+  position: absolute;
+  top: 5%;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: plane-flying-1 16s infinite; /* Safari 4+ */
+  -moz-animation:    plane-flying-1 16s infinite; /* Fx 5+ */
+  -o-animation:      plane-flying-1 16s infinite; /* Opera 12+ */
+  animation:         plane-flying-1 16s infinite; /* IE 10+, Fx 29+ */
+}
+
+#plane-2 {
+  position: absolute;
+  top: 60%;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: plane-flying-2 26s infinite; /* Safari 4+ */
+  -moz-animation:    plane-flying-2 26s infinite; /* Fx 5+ */
+  -o-animation:      plane-flying-2 26s infinite; /* Opera 12+ */
+  animation:         plane-flying-2 26s infinite; /* IE 10+, Fx 29+ */
+}
+
+#plane-3 {
+  position: absolute;
+  top: 30%;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: plane-flying-3 33s infinite; /* Safari 4+ */
+  -moz-animation:    plane-flying-3 33s infinite; /* Fx 5+ */
+  -o-animation:      plane-flying-3 33s infinite; /* Opera 12+ */
+  animation:         plane-flying-3 33s infinite; /* IE 10+, Fx 29+ */
+}
