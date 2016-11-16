@@ -1,0 +1,23 @@
+.home{
+
+	.container {
+		display: flex;
+		height: 100%;
+		width: 100%;
+	}
+	.left {
+		width: 60%;
+		background: url('../img/background.jpg') no-repeat;
+		-webkit-background-size: cover;
+		overflow: hidden;
+		background-size: cover;
+		position: relative;
+	}
+	.right {
+		width: calc( 40% - 200px);
+		background-color: #313131;
+		color: #fff;
+		padding: 100px;
+
+	}
+}
