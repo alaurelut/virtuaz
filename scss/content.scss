@@ -1,11 +1,11 @@
 .swiper-wrapper {
-	margin-top: 60px;
+	margin-top: 80px;
 }
 
 .main-content {
-	background-color: #272c3f;
+	background-color: #313131;
 	height: 100%;
-	width: 50%;
+	width: 627px;
 	margin-top: 0;
 	position: absolute;
 	right: 0px;
@@ -13,13 +13,14 @@
 
 .main-content p {
 	color: #ffffff;
-	padding-top: 80px;
-	padding-left: 90px;
-	padding-right: 90px;
-	text-align: justify;
+	width: 345px;
+	padding-top: 35px;
+	padding-left: 141px;
+	padding-right: 141px;
+	text-align: left;
 	font-family: Roboto;
-	font-weight: 300;
-	font-size: 20px;
+	font-weight: 100;
+	font-size: 14px;
 	letter-spacing: 0.5px;
 }
 
@@ -29,7 +30,19 @@
 
 .main-content h1 {
 	letter-spacing: 1.6px;
-	padding-top: 40px;
-	text-align: left;
+	padding-top: 35px;
+	text-align: center;
 	color: #ffffff;
+}
+
+.main-content h2 {
+	color: #ffffff;
+	padding-left: 141px;
+	padding-right: 141px;
+	text-align: left;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	margin-top: 35px;
 }

@@ -1,11 +1,11 @@
 .header {
 	top: 0;
 	position: absolute;
-	background-color: #272c3f;
+	background-color: #2a2a2a;
 	width: 100%;
 	z-index: 9999;
 	display: inline-flex;
-	height: 60px;
+	height: 80px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -17,16 +17,16 @@
 
 .main-menu {
 	display: flex;
+	margin-right: 40px;
 }
 
 .main-menu a {
 	text-decoration: none;
-	color:#ffffff; 
+	color:#fff; 
 	font-family: Roboto;
 	font-size: 16px;
-	letter-spacing: 0.8px;
 	display: block;
-	padding-right: 60px;
+	padding-right: 80px;
 }
 
 .main-menu a:hover {  
