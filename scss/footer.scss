@@ -1,0 +1,32 @@
+footer{
+    background-color: #2a2a2a;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .terms{
+        padding-left: 5%;
+        display: flex;
+        font-size: 12px;
+        color: #d0d0d0;
+        .link{
+            color: $red;
+            padding-right: 4px;
+        }
+    }
+
+    .socialMedias{
+        padding-right: 5%;
+        display: flex;
+        .icon{
+            width: 35px;
+            height: 35px;
+            padding-right: 10px;
+        }
+    }
+
+}
