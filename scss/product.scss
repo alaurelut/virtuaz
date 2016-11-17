@@ -1,7 +1,7 @@
 .product-wrapper {
     background-color: #313131;
     width: 100%;
-    height: calc( 100% - 80px);
+    height: calc( 100% - 160px);
     display: flex;
     padding-top: 80px;
     .product {
@@ -18,7 +18,7 @@
             background-size: cover;
         }
         .right {
-            padding: 50px;
+            padding: 25px 50px;
             width: 50%;
             h1 {
                 color: #d0d0d0;
@@ -31,27 +31,27 @@
                 justify-content: space-between;
                 align-items: center;
                 span {
-                    font-family: roboto;
+                    font-family: Roboto;
                     font-weight: 300;
                     font-size: 50px;
                 }
             }
             h2 {
-                font-family: roboto;
+                font-family: Roboto;
                 color: #d0d0d0;
                 font-weight: 700;
                 font-size: 22px;
                 margin: 25px 0 0;
             }
             p {
-                font-family: roboto;
+                font-family: Roboto;
                 color: #d0d0d0;
                 font-weight: 400;
                 font-size: 16px;
                 margin: 25px 0;
             }
             hr {
-                border: 2px solid red;
+                border: 2px solid $red;
                 width: 40px;
                 margin: 0;
             }
@@ -62,7 +62,7 @@
             .bottom {
                 display: flex;
                 justify-content: space-between;
-                padding-top: 50px;
+                padding-top: 25px;
                 .total {
                     color: #d0d0d0;
                     font-family: nimbus;
@@ -72,6 +72,7 @@
                     text-transform: uppercase;
                 }
                 .buy {
+                    cursor: pointer;
                     color: #d0d0d0;
                     font-family: nimbus;
                     font-size: 28px;
@@ -81,6 +82,9 @@
                     background: url('../img/product/red-mark.png') no-repeat;
                     width: 335px;
                     height: 50px;
+                }
+                .buy:hover {
+                    background: url('../img/product/green-mark.png') no-repeat;
                 }
             }
         }

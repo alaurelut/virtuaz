@@ -475,7 +475,7 @@
 .product-wrapper {
   background-color: #313131;
   width: 100%;
-  height: calc( 100% - 80px);
+  height: calc( 100% - 160px);
   display: flex;
   padding-top: 80px; }
   .product-wrapper .product {
@@ -491,7 +491,7 @@
       overflow: hidden;
       background-size: cover; }
     .product-wrapper .product .right {
-      padding: 50px;
+      padding: 25px 50px;
       width: 50%; }
       .product-wrapper .product .right h1 {
         color: #d0d0d0;
@@ -504,23 +504,23 @@
         justify-content: space-between;
         align-items: center; }
         .product-wrapper .product .right h1 span {
-          font-family: roboto;
+          font-family: Roboto;
           font-weight: 300;
           font-size: 50px; }
       .product-wrapper .product .right h2 {
-        font-family: roboto;
+        font-family: Roboto;
         color: #d0d0d0;
         font-weight: 700;
         font-size: 22px;
         margin: 25px 0 0; }
       .product-wrapper .product .right p {
-        font-family: roboto;
+        font-family: Roboto;
         color: #d0d0d0;
         font-weight: 400;
         font-size: 16px;
         margin: 25px 0; }
       .product-wrapper .product .right hr {
-        border: 2px solid red;
+        border: 2px solid #c82228;
         width: 40px;
         margin: 0; }
       .product-wrapper .product .right .cardboard {
@@ -529,7 +529,7 @@
       .product-wrapper .product .right .bottom {
         display: flex;
         justify-content: space-between;
-        padding-top: 50px; }
+        padding-top: 25px; }
         .product-wrapper .product .right .bottom .total {
           color: #d0d0d0;
           font-family: nimbus;
@@ -538,6 +538,7 @@
           margin: 0;
           text-transform: uppercase; }
         .product-wrapper .product .right .bottom .buy {
+          cursor: pointer;
           color: #d0d0d0;
           font-family: nimbus;
           font-size: 28px;
@@ -547,6 +548,33 @@
           background: url("../img/product/red-mark.png") no-repeat;
           width: 335px;
           height: 50px; }
+        .product-wrapper .product .right .bottom .buy:hover {
+          background: url("../img/product/green-mark.png") no-repeat; }
+
+footer {
+  background-color: #2a2a2a;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer .terms {
+    padding-left: 5%;
+    display: flex;
+    font-size: 12px;
+    color: #d0d0d0; }
+    footer .terms .link {
+      color: #c82228;
+      padding-right: 4px; }
+  footer .socialMedias {
+    padding-right: 5%;
+    display: flex; }
+    footer .socialMedias .icon {
+      width: 35px;
+      height: 35px;
+      padding-right: 10px; }
 
 html,
 body {
