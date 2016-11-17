@@ -367,6 +367,15 @@
   font-size: 14px;
   letter-spacing: 0.5px; }
 
+.product-wrapper {
+  background-color: #313131;
+  width: 100%;
+  height: calc( 100vh - 180px); }
+  .product-wrapper .product {
+    width: 100%;
+    background-color: #2a2a2a;
+    margin: 2.5% 5%; }
+
 html,
 body {
   position: relative;
