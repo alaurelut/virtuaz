@@ -5,6 +5,10 @@
 		height: 100%;
 		width: 100%;
 	}
+
+
+
+
 .left {
 	width: 60%;
 	background: url('../img/background-sombre.jpg') no-repeat;
@@ -58,10 +62,24 @@
 		background-color: #313131;
 		color: #fff;
 		padding: 100px;
-		#infos-noodle{
+		#infos-noodle {
 			.graf{
 				background: url('../img/personnages/infos/noodle-graf.png') no-repeat;
 				height: 100px;
+				text-transform: uppercase;
+				text-align: left;
+				background-position-x: -50px;
+			}
+			.graf span{
+				font-size: 60%;
+				width: 100%;
+    			display: block;
+			}
+			img{
+				position: absolute;
+    			bottom: 80px;
+    			width: 20%;
+    			right: 11%;
 			}
 		}
 		#infos-twoD{
@@ -69,6 +87,20 @@
 			.graf{
 				background: url('../img/personnages/infos/2d-graf.png') no-repeat;
 				height: 100px;
+				text-transform: uppercase;
+				text-align: left;
+				background-position-x: -50px;
+			}
+						.graf span{
+				font-size: 60%;
+				width: 100%;
+    			display: block;
+			}
+			img{
+				position: absolute;
+    			bottom: 80px;
+    			width: 20%;
+    			right: 11%;
 			}
 		}
 		#infos-murdok{
@@ -76,6 +108,21 @@
 			.graf{
 				background: url('../img/personnages/infos/murdok-graf.png') no-repeat;
 				height: 100px;
+				text-transform: uppercase;
+				text-align: left;
+				background-position-x: -50px;
+			}
+			.graf span{
+				font-size: 60%;
+				width: 100%;
+    			display: block;
+			}
+
+			img{
+				position: absolute;
+    			bottom: 80px;
+    			width: 20%;
+    			right: 11%;
 			}
 		}
 		#infos-russel{
@@ -83,7 +130,23 @@
 			.graf{
 				background: url('../img/personnages/infos/russel-graf.png') no-repeat;
 				height: 100px;
+				text-transform: uppercase;
+				text-align: left;
+				background-position-x: -50px;
 			}
+
+			.graf span{
+				font-size: 60%;
+				width: 100%;
+    			display: block;
+			}
+			img{
+				position: absolute;
+    			bottom: 80px;
+    			width: 20%;
+    			right: 11%;
+			}
+
 		}
 	}
 }
@@ -94,11 +157,19 @@
 	color: #d0d0d0;
 	width: 345px;
 	padding-top: 35px;
-	padding-left: 141px;
 	padding-right: 141px;
 	text-align: left;
 	font-family: Roboto;
 	font-weight: 100;
 	font-size: 14px;
 	letter-spacing: 0.5px;
+	line-height : 20px;
 }
+
+.graf {
+	font-family: nimbus;
+	font-size: 50px;
+}
+
+
+
