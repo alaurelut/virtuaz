@@ -5,19 +5,19 @@
 		height: 100%;
 		width: 100%;
 	}
-	.left {
-		width: 60%;
-		background: url('../img/background-sombre.jpg') no-repeat;
-		-webkit-background-size: cover;
-		overflow: hidden;
-		background-size: cover;
-		position: relative;
-		#shadow {
-			width: 100%;
-			height: 100%;
-			background-color: black;
-			opacity: 0.8;
-			pointer-events: none;
+.left {
+	width: 60%;
+	background: url('../img/background-sombre.jpg') no-repeat;
+	-webkit-background-size: cover;
+	overflow: hidden;
+	background-size: cover;
+	position: relative;
+	#shadow {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.8;
+	pointer-events: none;
 		}
 		.light {
 			width: 100%;
@@ -86,4 +86,19 @@
 			}
 		}
 	}
+}
+
+
+
+.text {
+	color: #d0d0d0;
+	width: 345px;
+	padding-top: 35px;
+	padding-left: 141px;
+	padding-right: 141px;
+	text-align: left;
+	font-family: Roboto;
+	font-weight: 100;
+	font-size: 14px;
+	letter-spacing: 0.5px;
 }

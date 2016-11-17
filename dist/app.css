@@ -355,6 +355,18 @@
       background: url("../img/personnages/infos/russel-graf.png") no-repeat;
       height: 100px; }
 
+.text {
+  color: #d0d0d0;
+  width: 345px;
+  padding-top: 35px;
+  padding-left: 141px;
+  padding-right: 141px;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 0.5px; }
+
 html,
 body {
   position: relative;
