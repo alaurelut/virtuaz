@@ -1,6 +1,8 @@
 function highlightElement(elem){
   var characterName = elem.srcElement.getAttribute('id');
   if (displayedCharacter != characterName) {
+    elem.srcElement.src = elem.srcElement.src.replace('.png', '') + "-selected.png";
+
     displayCharacterInfo(characterName);
   }
 }
@@ -9,11 +11,13 @@ function displayCharacterInfo(characterName){
   newDisplayedCharacter.style.display = "block";
   if (displayedCharacter !== null ) {
     document.getElementById('infos-' + displayedCharacter).style.display = "none";
+    var oldCharacter = document.getElementById(displayedCharacter);
+    oldCharacter.src = oldCharacter.src.replace('-selected', '');
   }
   displayedCharacter = characterName;
 }
 
-var displayedCharacter = 'noodle';
+var displayedCharacter = 'russel';
 
 var twoD = document.getElementById('twoD');
 twoD.addEventListener("click", highlightElement);
