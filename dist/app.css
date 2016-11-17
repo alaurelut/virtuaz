@@ -249,7 +249,7 @@
 
 @font-face {
   font-family: nimbus;
-  src: url(/font/NimbusSanL-Bol.otf); }
+  src: url(../font/NimbusSanL-Bol.otf); }
 
 .home .container {
   display: flex;
@@ -475,11 +475,75 @@
 .product-wrapper {
   background-color: #313131;
   width: 100%;
-  height: calc( 100vh - 180px); }
+  height: calc( 100% - 80px);
+  display: flex;
+  padding-top: 80px; }
   .product-wrapper .product {
     width: 100%;
     background-color: #2a2a2a;
-    margin: 2.5% 5%; }
+    margin: 2.5% 5%;
+    display: inline-flex; }
+    .product-wrapper .product .left {
+      width: 40%;
+      height: 100%;
+      background: url("../img/product/cardboard-display.jpg") no-repeat;
+      -webkit-background-size: cover;
+      overflow: hidden;
+      background-size: cover; }
+    .product-wrapper .product .right {
+      padding: 50px;
+      width: 50%; }
+      .product-wrapper .product .right h1 {
+        color: #d0d0d0;
+        font-family: nimbus;
+        font-size: 28px;
+        position: relative;
+        margin: 0;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .product-wrapper .product .right h1 span {
+          font-family: roboto;
+          font-weight: 300;
+          font-size: 50px; }
+      .product-wrapper .product .right h2 {
+        font-family: roboto;
+        color: #d0d0d0;
+        font-weight: 700;
+        font-size: 22px;
+        margin: 25px 0 0; }
+      .product-wrapper .product .right p {
+        font-family: roboto;
+        color: #d0d0d0;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 25px 0; }
+      .product-wrapper .product .right hr {
+        border-color: red;
+        width: 100px;
+        margin: 0; }
+      .product-wrapper .product .right .cardboard {
+        padding-right: 15px;
+        cursor: pointer; }
+      .product-wrapper .product .right .bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px; }
+        .product-wrapper .product .right .bottom .total {
+          color: #d0d0d0;
+          font-family: nimbus;
+          font-size: 28px;
+          position: relative;
+          margin: 0;
+          text-transform: uppercase; }
+        .product-wrapper .product .right .bottom .buy {
+          color: #d0d0d0;
+          font-family: nimbus;
+          font-size: 28px;
+          position: relative;
+          margin: 0;
+          text-transform: uppercase; }
 
 html,
 body {
