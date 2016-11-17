@@ -181,7 +181,12 @@
 
 .social-media {
   width: 90%;
-  display: flex; }
+  display: flex;
+  background: url("../img/gorillaz_band_members.jpg") no-repeat;
+  -webkit-background-size: cover;
+  overflow: hidden;
+  background-size: cover;
+  position: relative; }
 
 .instafeed {
   height: 90vh !important;
@@ -242,6 +247,10 @@
   padding-right: 80px;
   text-align: center; }
 
+@font-face {
+  font-family: nimbus;
+  src: url(/font/NimbusSanL-Bol.otf); }
+
 .home .container {
   display: flex;
   height: 100%;
@@ -266,14 +275,33 @@
     font-family: Roboto;
     font-weight: 100;
     font-size: 14px;
-    letter-spacing: 0.5px; }
-  .home .right .main-content img {
-    margin-bottom: 0; }
-  .home .right .main-content h1 {
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 9999999; }
+  .home .right .back-band img {
+    height: 370px;
+    position: absolute;
+    display: block;
+    vertical-align: center;
+    right: 32%;
+    bottom: 11%; }
+  .home .right .title img {
+    height: 100px;
+    position: absolute;
+    display: block;
+    vertical-align: center;
+    left: 70%;
+    width: 22%;
+    bottom: 75%; }
+  .home .right .title h1 {
     letter-spacing: 1.6px;
     text-align: center;
-    color: #ffffff; }
-  .home .right .main-content h2 {
+    color: #ffffff;
+    font-family: nimbus;
+    font-size: 35px;
+    position: relative;
+    z-index: 9999999; }
+  .home .right .graff1 h2 {
     color: #ffffff;
     text-align: left;
     font-family: Roboto;
@@ -281,9 +309,34 @@
     font-size: 14px;
     letter-spacing: 0.5px;
     margin-top: 35px;
-    background-image: url("graffite.png");
-    background-repeat: no-repeat;
-    background-position: center; }
+    padding-top: 8px;
+    padding-left: 40px;
+    clear: right; }
+  .home .right .graff2 h2 {
+    color: #ffffff;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 35px;
+    padding-top: 8px;
+    padding-left: 40px;
+    clear: right; }
+
+.graff1 {
+  text-align: left; }
+
+.graff1 img {
+  float: left;
+  width: 30px; }
+
+.graff2 {
+  text-align: left; }
+
+.graff2 img {
+  float: left;
+  width: 30px; }
 
 .slide2 .container {
   display: flex;
@@ -338,34 +391,86 @@
   padding: 100px; }
   .slide2 .right #infos-noodle .graf {
     background: url("../img/personnages/infos/noodle-graf.png") no-repeat;
-    height: 100px; }
+    height: 100px;
+    text-transform: uppercase;
+    text-align: left;
+    background-position-x: -50px; }
+  .slide2 .right #infos-noodle .graf span {
+    font-size: 60%;
+    width: 100%;
+    display: block; }
+  .slide2 .right #infos-noodle img {
+    position: absolute;
+    bottom: 80px;
+    width: 20%;
+    right: 11%; }
   .slide2 .right #infos-twoD {
     display: none; }
     .slide2 .right #infos-twoD .graf {
       background: url("../img/personnages/infos/2d-graf.png") no-repeat;
-      height: 100px; }
+      height: 100px;
+      text-transform: uppercase;
+      text-align: left;
+      background-position-x: -50px; }
+    .slide2 .right #infos-twoD .graf span {
+      font-size: 60%;
+      width: 100%;
+      display: block; }
+    .slide2 .right #infos-twoD img {
+      position: absolute;
+      bottom: 80px;
+      width: 20%;
+      right: 11%; }
   .slide2 .right #infos-murdok {
     display: none; }
     .slide2 .right #infos-murdok .graf {
       background: url("../img/personnages/infos/murdok-graf.png") no-repeat;
-      height: 100px; }
+      height: 100px;
+      text-transform: uppercase;
+      text-align: left;
+      background-position-x: -50px; }
+    .slide2 .right #infos-murdok .graf span {
+      font-size: 60%;
+      width: 100%;
+      display: block; }
+    .slide2 .right #infos-murdok img {
+      position: absolute;
+      bottom: 80px;
+      width: 20%;
+      right: 11%; }
   .slide2 .right #infos-russel {
     display: none; }
     .slide2 .right #infos-russel .graf {
       background: url("../img/personnages/infos/russel-graf.png") no-repeat;
-      height: 100px; }
+      height: 100px;
+      text-transform: uppercase;
+      text-align: left;
+      background-position-x: -50px; }
+    .slide2 .right #infos-russel .graf span {
+      font-size: 60%;
+      width: 100%;
+      display: block; }
+    .slide2 .right #infos-russel img {
+      position: absolute;
+      bottom: 80px;
+      width: 20%;
+      right: 11%; }
 
 .text {
   color: #d0d0d0;
   width: 345px;
   padding-top: 35px;
-  padding-left: 141px;
   padding-right: 141px;
   text-align: left;
   font-family: Roboto;
   font-weight: 100;
   font-size: 14px;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  line-height: 20px; }
+
+.graf {
+  font-family: nimbus;
+  font-size: 50px; }
 
 .product-wrapper {
   background-color: #313131;

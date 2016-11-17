@@ -1,6 +1,11 @@
 .social-media{
   width: 90%;
   display: flex;
+  background: url('../img/gorillaz_band_members.jpg') no-repeat;
+    -webkit-background-size: cover;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
 }
 .instafeed {
   height: 90vh !important;
