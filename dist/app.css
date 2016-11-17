@@ -520,8 +520,8 @@
         font-size: 16px;
         margin: 25px 0; }
       .product-wrapper .product .right hr {
-        border-color: red;
-        width: 100px;
+        border: 2px solid red;
+        width: 40px;
         margin: 0; }
       .product-wrapper .product .right .cardboard {
         padding-right: 15px;
