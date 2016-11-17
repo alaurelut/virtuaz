@@ -1,70 +1,204 @@
+#fast {
+    animation: blink 1800ms linear infinite;
+    -moz-animation: blink 1800ms linear infinite;
+    -webkit-animation: blink 1800ms linear infinite;
+}
+#regular {
+    animation: blink 3000ms linear infinite;
+    -moz-animation: blink 3000ms linear infinite;
+    -webkit-animation: blink 3000ms linear infinite;
+}
+#slow {
+    animation: blink 8000ms linear infinite;
+    -moz-animation: blink 8000ms linear infinite;
+    -webkit-animation: blink 8000ms linear infinite;
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 0.15;
+    }
+    8% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 @-webkit-keyframes plane-flying-1 {
-  0%   { left: 60%; }
-  50%   { left: 30%; top: 20% }
-  100% { left: -10%; }
+    0% {
+        left: -5%;
+    }
+    100% {
+        left: 110%;
+    }
 }
 @-webkit-keyframes plane-flying-2 {
-  0%   { left: 60%; }
-  50%   { left: 30%; top: 75% }
-  100% { left: -10%; }
+    0% {
+        left: -5%;
+    }
+    100% {
+        left: 110%;
+    }
 }
 @-webkit-keyframes plane-flying-3 {
-  0%   { left: -10%; }
-  50%   { left: 30%; top: 40% }
-  100% { left: 60%; }
+    0% {
+        left: -5%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+@-webkit-keyframes bird-flying-1 {
+    0% {
+        right: 35%;
+        top: 35%;
+    }
+    50% {
+        right: 40%;
+        top: 40%;
+    }
+    100% {
+        right: 35%;
+        top: 35%;
+    }
+}
+@-webkit-keyframes bird-flying-2 {
+    0% {
+        right: 80%;
+        top: 40%;
+    }
+    50% {
+        right: 90%;
+        top: 45%;
+    }
+    100% {
+        right: 80%;
+        top: 40%;
+    }
+}
+@-webkit-keyframes bird-flying-3 {
+    0% {
+        right: 50%;
+        top: 40%;
+    }
+    50% {
+        right: 62%;
+        top: 53%;
+    }
+    100% {
+        right: 50%;
+        top: 40%;
+    }
 }
 
-#fast {
-    animation:             blink 1800ms linear infinite;
-        -moz-animation:    blink 1800ms linear infinite;
-        -webkit-animation: blink 1800ms linear infinite;
+@keyframes shrink {
+  0% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
-
-#regular {
-    animation:             blink 3000ms linear infinite;
-        -moz-animation:    blink 3000ms linear infinite;
-        -webkit-animation: blink 3000ms linear infinite;
-}
-
-#slow {
-    animation:             blink 8000ms linear infinite;
-        -moz-animation:    blink 8000ms linear infinite;
-        -webkit-animation: blink 8000ms linear infinite;
-}
-
-@keyframes             blink { 0% {opacity:0;} 3% {opacity:0.15;} 8% {opacity:0;} 100% {opacity:0;}}
-    @-moz-keyframes    blink { 0% {opacity:0;} 3% {opacity:0.15;} 8% {opacity:0;} 100% {opacity:0;}}
-    @-webkit-keyframes blink { 0% {opacity:0;} 3% {opacity:0.15;} 8% {opacity:0;} 100% {opacity:0;}}
-
 #plane-1 {
-  position: absolute;
-  top: 5%;
-  height: 50px;
-  width: 50px;
-  -webkit-animation: plane-flying-1 16s infinite; /* Safari 4+ */
-  -moz-animation:    plane-flying-1 16s infinite; /* Fx 5+ */
-  -o-animation:      plane-flying-1 16s infinite; /* Opera 12+ */
-  animation:         plane-flying-1 16s infinite; /* IE 10+, Fx 29+ */
+    position: absolute;
+    top: 5%;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: plane-flying-1 80s infinite;
+    -moz-animation: plane-flying-1 80s infinite;
+    -o-animation: plane-flying-1 80s infinite;
+    animation: plane-flying-1 80s infinite;
 }
-
 #plane-2 {
-  position: absolute;
-  top: 60%;
-  height: 50px;
-  width: 50px;
-  -webkit-animation: plane-flying-2 26s infinite; /* Safari 4+ */
-  -moz-animation:    plane-flying-2 26s infinite; /* Fx 5+ */
-  -o-animation:      plane-flying-2 26s infinite; /* Opera 12+ */
-  animation:         plane-flying-2 26s infinite; /* IE 10+, Fx 29+ */
+    position: absolute;
+    top: 14%;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: plane-flying-2 75s infinite;
+    -moz-animation: plane-flying-2 75s infinite;
+    -o-animation: plane-flying-2 75s infinite;
+    animation: plane-flying-2 75s infinite;
+}
+#plane-3 {
+    position: absolute;
+    top: 30%;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: plane-flying-3 88s infinite;
+    -moz-animation: plane-flying-3 88s infinite;
+    -o-animation: plane-flying-3 88s infinite;
+    animation: plane-flying-3 88s infinite;
+}
+#bird-1 {
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    height: 50px;
+    width: 100px;
+    -webkit-animation: bird-flying-1 18s infinite;
+    -moz-animation: bird-flying-1 18s infinite;
+    -o-animation: bird-flying-1 18s infinite;
+    animation: bird-flying-1 18s infinite;
+}
+#bird-2 {
+    position: absolute;
+    right: 30%;
+    top: 40%;
+    height: 50px;
+    width: 100px;
+    -webkit-animation: bird-flying-2 22s infinite;
+    -moz-animation: bird-flying-2 22s infinite;
+    -o-animation: bird-flying-2 22s infinite;
+    animation: bird-flying-2 22s infinite;
+}
+#bird-3 {
+    position: absolute;
+    top: 50%;
+    right: 70%;
+    height: 50px;
+    width: 100px;
+    -webkit-animation: bird-flying-3 15s infinite;
+    -moz-animation: bird-flying-3 15s infinite;
+    -o-animation: bird-flying-3 15s infinite;
+    animation: bird-flying-3 15s infinite;
 }
 
-#plane-3 {
-  position: absolute;
-  top: 30%;
-  height: 50px;
-  width: 50px;
-  -webkit-animation: plane-flying-3 33s infinite; /* Safari 4+ */
-  -moz-animation:    plane-flying-3 33s infinite; /* Fx 5+ */
-  -o-animation:      plane-flying-3 33s infinite; /* Opera 12+ */
-  animation:         plane-flying-3 33s infinite; /* IE 10+, Fx 29+ */
+@-webkit-keyframes floating {
+    0% {
+        top: 50%;
+        right: 70%;
+    }
+    25% {
+        top: 51%;
+        right: 69%;
+    }
+    50% {
+        top: 52%;
+        right: 70%;
+    }
+    75% {
+        top: 51%;
+        right: 69%;
+    }
+    100% {
+        top: 50%;
+        right: 70%;
+    }
+}
+#boat {
+    position: absolute;
+    top: 50%;
+    right: 70%;
+    height: 170px;
+    width: 300px;
+    -webkit-animation: floating 8s infinite;
+    -moz-animation: floating 8s infinite;
+    -o-animation: floating 8s infinite;
+    animation: floating 8s infinite;
 }

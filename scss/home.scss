@@ -5,55 +5,54 @@
 		width: 100%;
 	}
 	.left {
-		width: 60%;
-		background: url('../img/background.jpg') no-repeat;
+		width: 70%;
+		background: url('../img/home/background.jpg') no-repeat;
+		background-size: 110% 110%;
+		background-position: center center;
+		animation: shrink 8s infinite;
 		-webkit-background-size: cover;
 		overflow: hidden;
-		background-size: cover;
 		position: relative;
+		.back-band img {
+			height: 45%;
+			position: absolute;
+			display: block;
+			right: 5%;
+			bottom: 80px;
+		}
 	}
 	.right {
-		width: calc( 40% - 200px);
+		width: calc( 30% - 100px);
 		background-color: #313131;
 		color: #fff;
-		padding: 100px;
+		padding: 50px;
 		.main-content p {
 			color: #d0d0d0;
 			text-align: left;
 			font-family: Roboto;
-			font-weight: 100;
+			font-weight: 300;
 			font-size: 14px;
 			letter-spacing: 0.5px;
 			position: relative;
 			z-index: 9999999;
 		}
-		.back-band img {
-			height: 370px;
-			position: absolute;
-			display: block;
-			vertical-align: center;
-			right: 32%;
-			bottom: 11%;
-		}
-		.title img {
-			height: 100px;
-			position: absolute;
-			display: block;
-			vertical-align: center;
-			left: 70%;
-			width: 22%;
-			bottom: 75%;
-		}
 		.title h1 {
+			height: 150px;
+			background: url("../img/back-graff.png") no-repeat;
 			letter-spacing: 1.6px;
+			background-size: contain;
 			text-align: center;
 			color: #ffffff;
 			font-family: nimbus;
 			font-size: 35px;
 			position: relative;
 			z-index: 9999999;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		.graff1 h2 {
+			background: url("../img/graff-point.png") no-repeat;
 			color: #ffffff;
 			text-align: left;
 			font-family: Roboto;
@@ -61,11 +60,14 @@
 			font-size: 14px;
 			letter-spacing: 0.5px;
 			margin-top: 35px;
-			padding-top: 8px;
-			padding-left: 40px;
+			padding-top: 15px;
+			padding-left: 20px;
 			clear: right;
+			height: 30px;
+			background-size: contain;
 		}
 		.graff2 h2 {
+			background: url("../img/graff-point.png") no-repeat;
 			color: #ffffff;
 			text-align: left;
 			font-family: Roboto;
@@ -73,9 +75,11 @@
 			font-size: 14px;
 			letter-spacing: 0.5px;
 			margin-top: 35px;
-			padding-top: 8px;
-			padding-left: 40px;
+			padding-top: 15px;
+			padding-left: 20px;
 			clear: right;
+			height: 30px;
+			background-size: contain;
 		}
 	}
 }
