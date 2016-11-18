@@ -181,16 +181,16 @@
         right: 70%;
     }
     25% {
-        top: 51%;
-        right: 69%;
+        top: 50.5%;
+        right: 69.5%;
     }
     50% {
-        top: 52%;
+        top: 51%;
         right: 70%;
     }
     75% {
-        top: 51%;
-        right: 69%;
+        top: 50.5%;;
+        right: 69.5%;
     }
     100% {
         top: 50%;
@@ -203,8 +203,8 @@
     right: 70%;
     height: 170px;
     width: 300px;
-    -webkit-animation: floating 8s infinite;
-    -moz-animation: floating 8s infinite;
-    -o-animation: floating 8s infinite;
-    animation: floating 8s infinite;
+    -webkit-animation: floating 6s infinite;
+    -moz-animation: floating 6s infinite;
+    -o-animation: floating 6s infinite;
+    animation: floating 6s infinite;
 }
