@@ -9,7 +9,7 @@
 		background: url('../img/home/background.jpg') no-repeat;
 		background-size: 110% 110%;
 		background-position: center center;
-		animation: shrink 8s infinite;
+		// animation: shrink 8s infinite;
 		-webkit-background-size: cover;
 		overflow: hidden;
 		position: relative;
@@ -20,10 +20,18 @@
 			right: 5%;
 			bottom: 80px;
 		}
+		#shadow {
+			width: 50%;
+    height: 100%;
+    pointer-events: none;
+    background-image: linear-gradient(to right, transparent, #1a171b);
+    pointer-events: none;
+    margin-left: 50%;
+		}
 	}
 	.right {
 		width: calc( 30% - 100px);
-		background-color: #313131;
+		background-color: $black;
 		color: #fff;
 		padding: 50px;
 		.main-content p {

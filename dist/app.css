@@ -29,33 +29,33 @@
   flex-direction: column; }
 
 #fast {
-  animation: blink 1800ms linear infinite;
-  -moz-animation: blink 1800ms linear infinite;
-  -webkit-animation: blink 1800ms linear infinite; }
+  animation: blink 2s linear infinite;
+  -moz-animation: blink 2s linear infinite;
+  -webkit-animation: blink 2s linear infinite; }
 
 #regular {
-  animation: blink 3000ms linear infinite;
-  -moz-animation: blink 3000ms linear infinite;
-  -webkit-animation: blink 3000ms linear infinite; }
+  animation: blink 5s linear infinite;
+  -moz-animation: blink 5s linear infinite;
+  -webkit-animation: blink 5s linear infinite; }
 
 #slow {
-  animation: blink 8000ms linear infinite;
-  -moz-animation: blink 8000ms linear infinite;
-  -webkit-animation: blink 8000ms linear infinite; }
+  animation: blink 12s linear infinite;
+  -moz-animation: blink 12s linear infinite;
+  -webkit-animation: blink 12s linear infinite; }
 
 @-webkit-keyframes blink {
   0% {
     opacity: 0; }
-  3% {
-    opacity: 0.15; }
-  8% {
+  5% {
+    opacity: 0.10; }
+  15% {
     opacity: 0; }
   100% {
     opacity: 0; } }
 
 @-webkit-keyframes plane-flying-1 {
   0% {
-    left: -5%; }
+    left: 0; }
   100% {
     left: 110%; } }
 
@@ -67,7 +67,7 @@
 
 @-webkit-keyframes plane-flying-3 {
   0% {
-    left: -5%; }
+    left: -10%; }
   100% {
     left: 110%; } }
 
@@ -116,7 +116,7 @@
   position: absolute;
   top: 5%;
   height: 50px;
-  width: 50px;
+  width: 100px;
   -webkit-animation: plane-flying-1 80s infinite;
   -moz-animation: plane-flying-1 80s infinite;
   -o-animation: plane-flying-1 80s infinite;
@@ -124,19 +124,27 @@
 
 #plane-2 {
   position: absolute;
+  background: url("../img/home/airplane.png") no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
   top: 14%;
   height: 50px;
-  width: 50px;
+  width: 100px;
   -webkit-animation: plane-flying-2 75s infinite;
   -moz-animation: plane-flying-2 75s infinite;
   -o-animation: plane-flying-2 75s infinite;
   animation: plane-flying-2 75s infinite; }
 
+#plane-2:hover {
+  background: url("../img/home/airplane-arrow.png") no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover; }
+
 #plane-3 {
   position: absolute;
   top: 30%;
   height: 50px;
-  width: 50px;
+  width: 100px;
   -webkit-animation: plane-flying-3 88s infinite;
   -moz-animation: plane-flying-3 88s infinite;
   -o-animation: plane-flying-3 88s infinite;
@@ -180,14 +188,14 @@
     top: 50%;
     right: 70%; }
   25% {
-    top: 51%;
-    right: 69%; }
+    top: 50.5%;
+    right: 69.5%; }
   50% {
-    top: 52%;
+    top: 51%;
     right: 70%; }
   75% {
-    top: 51%;
-    right: 69%; }
+    top: 50.5%;
+    right: 69.5%; }
   100% {
     top: 50%;
     right: 70%; } }
@@ -198,25 +206,10 @@
   right: 70%;
   height: 170px;
   width: 300px;
-  -webkit-animation: floating 8s infinite;
-  -moz-animation: floating 8s infinite;
-  -o-animation: floating 8s infinite;
-  animation: floating 8s infinite; }
-
-.yellow-bg {
-  background-color: #ffe497; }
-
-.light-yellow-bg {
-  background-color: #fff3ce; }
-
-.blue-bg {
-  background-color: #cbfff1; }
-
-.coral-bg {
-  background-color: #ff9a89; }
-
-.pink-bg {
-  background-color: #ff5e7c; }
+  -webkit-animation: floating 6s infinite;
+  -moz-animation: floating 6s infinite;
+  -o-animation: floating 6s infinite;
+  animation: floating 6s infinite; }
 
 .swiper-pagination-bullet {
   width: 14px !important;
@@ -232,7 +225,7 @@
 .swiper-pagination {
   right: 0 !important;
   position: absolute;
-  background-color: #1c1c1c;
+  background-color: #1a171b;
   width: 60px;
   margin-top: 50px;
   display: flex;
@@ -302,7 +295,7 @@
 .header {
   top: 0;
   position: absolute;
-  background-color: #2a2a2a;
+  background-color: #1a171b;
   width: 100%;
   z-index: 9999;
   display: inline-flex;
@@ -350,7 +343,6 @@
   background: url("../img/home/background.jpg") no-repeat;
   background-size: 110% 110%;
   background-position: center center;
-  animation: shrink 8s infinite;
   -webkit-background-size: cover;
   overflow: hidden;
   position: relative; }
@@ -360,10 +352,17 @@
     display: block;
     right: 5%;
     bottom: 80px; }
+  .home .left #shadow {
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    background-image: linear-gradient(to right, transparent, #1a171b);
+    pointer-events: none;
+    margin-left: 50%; }
 
 .home .right {
   width: calc( 30% - 100px);
-  background-color: #313131;
+  background-color: #1a171b;
   color: #fff;
   padding: 50px; }
   .home .right .main-content p {
@@ -435,7 +434,8 @@
 .slide2 .container {
   display: flex;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .slide2 .left {
   width: 70%;
@@ -448,7 +448,7 @@
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.85;
     pointer-events: none; }
   .slide2 .left .light {
     width: 100%;
@@ -466,6 +466,15 @@
     position: absolute;
     bottom: 0;
     cursor: pointer; }
+  .slide2 .left #tag {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    left: 6%;
+    top: 39%;
+    opacity: 0.6;
+    transform: rotate(-10deg);
+    width: 300px; }
   .slide2 .left #twoD {
     left: 0;
     opacity: 0.3; }
@@ -480,24 +489,31 @@
 
 .slide2 .right {
   width: calc( 30% - 100px);
-  background-color: #313131;
+  background-color: #1a171b;
+  box-shadow: -30px 0 60px 60px #1a171b;
+  z-index: 99999;
   color: #fff;
-  padding: 50px; }
-  .slide2 .right #infos-noodle .graf {
-    background: url("../img/personnages/infos/noodle-graf.png") no-repeat;
-    height: 100px;
-    text-transform: uppercase;
-    text-align: left;
-    background-position-x: -50px; }
-  .slide2 .right #infos-noodle .graf span {
-    font-size: 60%;
-    width: 100%;
-    display: block; }
-  .slide2 .right #infos-noodle img {
-    position: absolute;
-    bottom: 80px;
-    width: 20%;
-    right: 11%; }
+  padding: 50px;
+  position: relative; }
+  .slide2 .right #infos-noodle {
+    display: none; }
+    .slide2 .right #infos-noodle .graf {
+      background: url("../img/personnages/infos/noodle-graf.png") no-repeat;
+      height: 100px;
+      text-transform: uppercase;
+      text-align: left;
+      background-position-x: -50px; }
+    .slide2 .right #infos-noodle .graf span {
+      font-size: 60%;
+      width: 100%;
+      display: block; }
+    .slide2 .right #infos-noodle img {
+      position: absolute;
+      bottom: 80px;
+      width: 80%;
+      right: 0;
+      left: 0;
+      margin: auto; }
   .slide2 .right #infos-twoD {
     display: none; }
     .slide2 .right #infos-twoD .graf {
@@ -513,8 +529,10 @@
     .slide2 .right #infos-twoD img {
       position: absolute;
       bottom: 80px;
-      width: 20%;
-      right: 11%; }
+      width: 80%;
+      right: 0;
+      left: 0;
+      margin: auto; }
   .slide2 .right #infos-murdok {
     display: none; }
     .slide2 .right #infos-murdok .graf {
@@ -530,29 +548,31 @@
     .slide2 .right #infos-murdok img {
       position: absolute;
       bottom: 80px;
-      width: 20%;
-      right: 11%; }
-  .slide2 .right #infos-russel {
-    display: none; }
-    .slide2 .right #infos-russel .graf {
-      background: url("../img/personnages/infos/russel-graf.png") no-repeat;
-      height: 100px;
-      text-transform: uppercase;
-      text-align: left;
-      background-position-x: -50px; }
-    .slide2 .right #infos-russel .graf span {
-      font-size: 60%;
-      width: 100%;
-      display: block; }
-    .slide2 .right #infos-russel img {
-      position: absolute;
-      bottom: 80px;
-      width: 20%;
-      right: 11%; }
+      width: 80%;
+      right: 0;
+      left: 0;
+      margin: auto; }
+  .slide2 .right #infos-russel .graf {
+    background: url("../img/personnages/infos/russel-graf.png") no-repeat;
+    height: 100px;
+    text-transform: uppercase;
+    text-align: left;
+    background-position-x: -50px; }
+  .slide2 .right #infos-russel .graf span {
+    font-size: 60%;
+    width: 100%;
+    display: block; }
+  .slide2 .right #infos-russel img {
+    position: absolute;
+    bottom: 80px;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: auto; }
 
 .text {
   color: #d0d0d0;
-  width: 345px;
+  width: 100%;
   padding-top: 35px;
   padding-right: 141px;
   text-align: left;
@@ -567,14 +587,14 @@
   font-size: 50px; }
 
 .product-wrapper {
-  background-color: #313131;
+  background-color: #1a171b;
   width: 100%;
   height: calc( 100% - 80px);
   display: flex;
   padding-top: 80px; }
   .product-wrapper .product {
     width: 100%;
-    background-color: #2a2a2a;
+    background-color: #1a171b;
     margin: 2.5% 5%;
     display: inline-flex; }
     .product-wrapper .product .left {
@@ -664,7 +684,7 @@
   z-index: 0; }
 
 #secret-page {
-  background-color: #313131;
+  background-color: #1a171b;
   display: inline-block; }
 
 #secret-page .header-img {
@@ -698,7 +718,7 @@
 #secret-page .product-list .product {
   width: 50%;
   display: inline-block;
-  background-color: #2a2a2a;
+  background-color: #1a171b;
   float: left;
   margin-bottom: 40px; }
 
@@ -764,7 +784,7 @@
   margin-top: -30px; }
 
 footer {
-  background-color: #2a2a2a;
+  background-color: #1a171b;
   height: 80px;
   width: 100%;
   display: flex;

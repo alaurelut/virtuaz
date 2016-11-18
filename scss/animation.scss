@@ -1,26 +1,26 @@
 #fast {
-    animation: blink 1800ms linear infinite;
-    -moz-animation: blink 1800ms linear infinite;
-    -webkit-animation: blink 1800ms linear infinite;
+    animation: blink 2s linear infinite;
+    -moz-animation: blink 2s linear infinite;
+    -webkit-animation: blink 2s linear infinite;
 }
 #regular {
-    animation: blink 3000ms linear infinite;
-    -moz-animation: blink 3000ms linear infinite;
-    -webkit-animation: blink 3000ms linear infinite;
+    animation: blink 5s linear infinite;
+    -moz-animation: blink 5s linear infinite;
+    -webkit-animation: blink 5s linear infinite;
 }
 #slow {
-    animation: blink 8000ms linear infinite;
-    -moz-animation: blink 8000ms linear infinite;
-    -webkit-animation: blink 8000ms linear infinite;
+    animation: blink 12s linear infinite;
+    -moz-animation: blink 12s linear infinite;
+    -webkit-animation: blink 12s linear infinite;
 }
 @-webkit-keyframes blink {
     0% {
         opacity: 0;
     }
-    3% {
-        opacity: 0.15;
+    5% {
+        opacity: 0.10;
     }
-    8% {
+    15% {
         opacity: 0;
     }
     100% {
@@ -29,7 +29,7 @@
 }
 @-webkit-keyframes plane-flying-1 {
     0% {
-        left: -5%;
+        left: 0;
     }
     100% {
         left: 110%;
@@ -45,7 +45,7 @@
 }
 @-webkit-keyframes plane-flying-3 {
     0% {
-        left: -5%;
+        left: -10%;
     }
     100% {
         left: 110%;
@@ -93,23 +93,22 @@
         top: 40%;
     }
 }
-
 @keyframes shrink {
-  0% {
-    background-size: 100% 100%;
-  }
-  50% {
-    background-size: 110% 110%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
+    0% {
+        background-size: 100% 100%;
+    }
+    50% {
+        background-size: 110% 110%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
 }
 #plane-1 {
     position: absolute;
     top: 5%;
     height: 50px;
-    width: 50px;
+    width: 100px;
     -webkit-animation: plane-flying-1 80s infinite;
     -moz-animation: plane-flying-1 80s infinite;
     -o-animation: plane-flying-1 80s infinite;
@@ -117,19 +116,27 @@
 }
 #plane-2 {
     position: absolute;
+    background: url('../img/home/airplane.png') no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
     top: 14%;
     height: 50px;
-    width: 50px;
+    width: 100px;
     -webkit-animation: plane-flying-2 75s infinite;
     -moz-animation: plane-flying-2 75s infinite;
     -o-animation: plane-flying-2 75s infinite;
     animation: plane-flying-2 75s infinite;
 }
+#plane-2:hover {
+    background: url('../img/home/airplane-arrow.png') no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+}
 #plane-3 {
     position: absolute;
     top: 30%;
     height: 50px;
-    width: 50px;
+    width: 100px;
     -webkit-animation: plane-flying-3 88s infinite;
     -moz-animation: plane-flying-3 88s infinite;
     -o-animation: plane-flying-3 88s infinite;
@@ -168,23 +175,22 @@
     -o-animation: bird-flying-3 15s infinite;
     animation: bird-flying-3 15s infinite;
 }
-
 @-webkit-keyframes floating {
     0% {
         top: 50%;
         right: 70%;
     }
     25% {
-        top: 51%;
-        right: 69%;
+        top: 50.5%;
+        right: 69.5%;
     }
     50% {
-        top: 52%;
+        top: 51%;
         right: 70%;
     }
     75% {
-        top: 51%;
-        right: 69%;
+        top: 50.5%;;
+        right: 69.5%;
     }
     100% {
         top: 50%;
@@ -197,8 +203,8 @@
     right: 70%;
     height: 170px;
     width: 300px;
-    -webkit-animation: floating 8s infinite;
-    -moz-animation: floating 8s infinite;
-    -o-animation: floating 8s infinite;
-    animation: floating 8s infinite;
+    -webkit-animation: floating 6s infinite;
+    -moz-animation: floating 6s infinite;
+    -o-animation: floating 6s infinite;
+    animation: floating 6s infinite;
 }

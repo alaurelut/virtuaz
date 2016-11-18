@@ -23,7 +23,7 @@
 }
 
 #secret-page{
-  background-color: #313131;
+  background-color: $black;
   display: inline-block;
 }
 #secret-page .header-img{
@@ -57,7 +57,7 @@
 #secret-page .product-list .product{
   width: 50%;
   display: inline-block;
-  background-color: #2a2a2a;
+  background-color: $black;
   float: left;
   margin-bottom: 40px;
 }
