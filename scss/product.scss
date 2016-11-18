@@ -1,7 +1,7 @@
 .product-wrapper {
     background-color: #313131;
     width: 100%;
-    height: calc( 100% - 160px);
+    height: calc( 100% - 80px);
     display: flex;
     padding-top: 80px;
     .product {
@@ -17,8 +17,13 @@
             overflow: hidden;
             background-size: cover;
         }
+
+        h1 span {
+            
+        }
+
         .right {
-            padding: 25px 50px;
+            padding: 50px;
             width: 50%;
             h1 {
                 color: #d0d0d0;
@@ -31,28 +36,28 @@
                 justify-content: space-between;
                 align-items: center;
                 span {
-                    font-family: Roboto;
+                    font-family: roboto;
                     font-weight: 300;
                     font-size: 50px;
                 }
             }
             h2 {
-                font-family: Roboto;
+                font-family: roboto;
                 color: #d0d0d0;
                 font-weight: 700;
                 font-size: 22px;
                 margin: 25px 0 0;
             }
             p {
-                font-family: Roboto;
+                font-family: roboto;
                 color: #d0d0d0;
                 font-weight: 400;
                 font-size: 16px;
                 margin: 25px 0;
             }
             hr {
-                border: 2px solid $red;
-                width: 40px;
+                border-color: red;
+                width: 100px;
                 margin: 0;
             }
             .cardboard {
@@ -62,7 +67,7 @@
             .bottom {
                 display: flex;
                 justify-content: space-between;
-                padding-top: 25px;
+                padding-top: 50px;
                 .total {
                     color: #d0d0d0;
                     font-family: nimbus;
@@ -72,7 +77,6 @@
                     text-transform: uppercase;
                 }
                 .buy {
-                    cursor: pointer;
                     color: #d0d0d0;
                     font-family: nimbus;
                     font-size: 28px;
@@ -82,9 +86,6 @@
                     background: url('../img/product/red-mark.png') no-repeat;
                     width: 335px;
                     height: 50px;
-                }
-                .buy:hover {
-                    background: url('../img/product/green-mark.png') no-repeat;
                 }
             }
         }
